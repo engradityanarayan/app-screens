@@ -34,78 +34,78 @@ const appPages: AppPage[] = [
     iosIcon: logInOutline,
     mdIcon: logInOutline
   },
-  {
-    title: 'Register',
-    url: '/pages/Register',
-    iosIcon: newspaperOutline,
-    mdIcon: newspaperOutline
-  },
-  {
-    title: 'Recruitment',
-    url: '/pages/Recruitment',
-    iosIcon: handLeftOutline,
-    mdIcon: handLeftOutline
-  },
-  {
-    title: 'Dashboard',
-    url: '/pages/Dashboard',
-    iosIcon: calendarClearOutline,
-    mdIcon: calendarClearOutline
-  },
-  {
-    title: 'Face Recognition',
-    url: '/pages/Face',
-    iosIcon: cameraOutline,
-    mdIcon: cameraOutline
-  },
-  {
-    title: 'Password',
-    url: '/pages/Account',
-    iosIcon: fingerPrintOutline,
-    mdIcon: fingerPrintOutline
-  },
-  {
-    title: 'Profile',
-    url: '/pages/Accountupd',
-    iosIcon: folderOpenOutline,
-    mdIcon: folderOpenOutline
-  },
-  {
-    title: 'Attendance',
-    url: '/pages/Attendance',
-    iosIcon: thumbsUpOutline,
-    mdIcon: thumbsUpOutline
-  },
-  {
-    title: 'Notice',
-    url: '/pages/Notice',
-    iosIcon: documentAttachOutline,
-    mdIcon: documentAttachOutline
-  },
-  {
-    title: 'Routes',
-    url: '/pages/Routes',
-    iosIcon: mapOutline,
-    mdIcon: mapOutline
-  },
-  {
-    title: 'Routes Live',
-    url: '/pages/Routeslive',
-    iosIcon: mapOutline,
-    mdIcon: mapOutline
-  },
-  {
-    title: 'Routes Report',
-    url: '/pages/Routesreport',
-    iosIcon: mapOutline,
-    mdIcon: mapOutline
-  },
-  {
-    title: 'Routes End',
-    url: '/pages/Routesend',
-    iosIcon: mapOutline,
-    mdIcon: mapOutline
-  }
+  // {
+  //   title: 'Register',
+  //   url: '/pages/Register',
+  //   iosIcon: newspaperOutline,
+  //   mdIcon: newspaperOutline
+  // },
+  // {
+  //   title: 'Recruitment',
+  //   url: '/pages/Recruitment',
+  //   iosIcon: handLeftOutline,
+  //   mdIcon: handLeftOutline
+  // },
+  // {
+  //   title: 'Dashboard',
+  //   url: '/pages/Dashboard',
+  //   iosIcon: calendarClearOutline,
+  //   mdIcon: calendarClearOutline
+  // },
+  // {
+  //   title: 'Face Recognition',
+  //   url: '/pages/Face',
+  //   iosIcon: cameraOutline,
+  //   mdIcon: cameraOutline
+  // },
+  // {
+  //   title: 'Password',
+  //   url: '/pages/Account',
+  //   iosIcon: fingerPrintOutline,
+  //   mdIcon: fingerPrintOutline
+  // },
+  // {
+  //   title: 'Profile',
+  //   url: '/pages/Accountupd',
+  //   iosIcon: folderOpenOutline,
+  //   mdIcon: folderOpenOutline
+  // },
+  // {
+  //   title: 'Attendance',
+  //   url: '/pages/Attendance',
+  //   iosIcon: thumbsUpOutline,
+  //   mdIcon: thumbsUpOutline
+  // },
+  // {
+  //   title: 'Notice',
+  //   url: '/pages/Notice',
+  //   iosIcon: documentAttachOutline,
+  //   mdIcon: documentAttachOutline
+  // },
+  // {
+  //   title: 'Routes',
+  //   url: '/pages/Routes',
+  //   iosIcon: mapOutline,
+  //   mdIcon: mapOutline
+  // },
+  // {
+  //   title: 'Routes Live',
+  //   url: '/pages/Routeslive',
+  //   iosIcon: mapOutline,
+  //   mdIcon: mapOutline
+  // },
+  // {
+  //   title: 'Routes Report',
+  //   url: '/pages/Routesreport',
+  //   iosIcon: mapOutline,
+  //   mdIcon: mapOutline
+  // },
+  // {
+  //   title: 'Routes End',
+  //   url: '/pages/Routesend',
+  //   iosIcon: mapOutline,
+  //   mdIcon: mapOutline
+  // }
 ];
 
 // const labels = ['Family', 'Friends', 'Notes', 'Work', 'Travel', 'Reminders'];

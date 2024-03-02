@@ -1,5 +1,7 @@
 import { IonApp, IonRouterOutlet, IonSplitPane, setupIonicReact } from '@ionic/react';
 import { IonReactRouter } from '@ionic/react-router';
+import { I18nextProvider } from 'react-i18next';
+import i18n from './i18n.js';
 import { Redirect, Route } from 'react-router-dom';
 import Menu from './components/Menu';
 import Loader from './pages/Loader';
@@ -39,29 +41,31 @@ setupIonicReact();
 
 const App: React.FC = () => {
   return (
-    <IonApp>
-      <IonReactRouter>
-        <IonSplitPane contentId="main">
-          <Menu />
-          <IonRouterOutlet id="main">
-            <Route exact path="/" component={Loader}/>
-            <Route exact path="/pages/Login" component={Login}/>
-            <Route exact path="/pages/Register" component={Register}/>
-            <Route exact path="/pages/Recruitment" component={Recruitment}/>
-            <Route exact path="/pages/Dashboard" component={Dashboard}/>
-            <Route exact path="/pages/Account" component={Account}/>
-            <Route exact path="/pages/Face" component={Face}/>
-            <Route exact path="/pages/Accountupd" component={Accountupd}/>
-            <Route exact path="/pages/Attendance" component={Attendance}/>
-            <Route exact path="/pages/Notice" component={Notice}/>
-            <Route exact path="/pages/Routes" component={Routes}/>
-            <Route exact path="/pages/Routeslive" component={Routeslive}/>
-            <Route exact path="/pages/Routesend" component={Routesend}/>
-            <Route exact path="/pages/Routesreport" component={Routesreport}/>            
-          </IonRouterOutlet>
-        </IonSplitPane>
-      </IonReactRouter>
-    </IonApp>
+    <I18nextProvider i18n={i18n}>
+      <IonApp>
+        <IonReactRouter>
+          <IonSplitPane contentId="main">
+            <Menu />
+            <IonRouterOutlet id="main">
+              <Route exact path="/" component={Loader}/>
+              <Route exact path="/pages/Login" component={Login}/>
+              {/* <Route exact path="/pages/Register" component={Register}/> */}
+              {/* <Route exact path="/pages/Recruitment" component={Recruitment}/> */}
+              <Route exact path="/pages/Dashboard" component={Dashboard}/>
+              {/* <Route exact path="/pages/Account" component={Account}/>
+              <Route exact path="/pages/Face" component={Face}/>
+              <Route exact path="/pages/Accountupd" component={Accountupd}/>
+              <Route exact path="/pages/Attendance" component={Attendance}/>
+              <Route exact path="/pages/Notice" component={Notice}/>
+              <Route exact path="/pages/Routes" component={Routes}/>
+              <Route exact path="/pages/Routeslive" component={Routeslive}/>
+              <Route exact path="/pages/Routesend" component={Routesend}/>
+              <Route exact path="/pages/Routesreport" component={Routesreport}/>             */}
+            </IonRouterOutlet>
+          </IonSplitPane>
+        </IonReactRouter>
+      </IonApp>
+    </I18nextProvider>
   );
 };
 

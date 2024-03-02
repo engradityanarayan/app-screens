@@ -1,0 +1,13 @@
+{    
+        "dashboard": "Dashboard",
+        "employeeNameAndID": "Employee Name and ID",
+        "shiftTimingDetails": "Shift Timing Details",
+        "punchIn": "Punch In",
+        "ticket": "Ticket",
+        "leave": "Leave",
+        "sos": "SOS",
+        "copyright": "Copyright | Guard App",
+        "routes": "Routes",
+        "selectRoute": "Select Route",
+        "startTrip": "Start Trip"      
+}

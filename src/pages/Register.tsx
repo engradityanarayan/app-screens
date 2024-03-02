@@ -1,9 +1,10 @@
 import { IonButtons, IonContent, IonHeader, IonMenuButton, IonPage, IonTitle, IonToolbar, IonImg, IonButton, IonInput, IonCard, IonCardContent, IonCardHeader, IonCardSubtitle, IonCardTitle,IonItem, IonList, IonFooter} from '@ionic/react';
 import { useParams } from 'react-router';
+import { useTranslation } from 'react-i18next';
 // import ExploreContainer from '../components/ExploreContainer';
 import './Page.css';
 const Register: React.FC = () => {
-
+  const { t } = useTranslation();
   const { name } = useParams<{ name: string; }>();
 
   return (
@@ -19,6 +20,8 @@ const Register: React.FC = () => {
         
       </IonHeader>
 
+      
+
       <IonContent fullscreen>
         <IonHeader  collapse="condense">
         <IonTitle>{name}</IonTitle>
@@ -26,6 +29,7 @@ const Register: React.FC = () => {
         <IonCard className='ion-text-center ion-margin'>
       <img alt="Logo" src="./assets/imgs/logo.jpg"/>
       <IonCardHeader>
+        {/* <IonCardTitle color={'dark'} >{t('greeting')}</IonCardTitle> */}
         <IonCardTitle color={'dark'} >Register</IonCardTitle>
         <IonCardSubtitle color={'dark'}>Welcome to Gurad Commander</IonCardSubtitle>
       </IonCardHeader>

@@ -27,7 +27,9 @@ const Loader: React.FC = () => {
         <IonImg src="./assets/imgs/splash.jpg" alt="splash" />
         <IonFooter>
         <IonToolbar>
-          <IonTitle className='ion-text-center ion-margin'>Copyright | Guard App</IonTitle>
+          {/* <IonTitle className='ion-text-center ion-margin'>Copyright | Guard App</IonTitle> */}
+          <IonImg class='header-image' src="./assets/imgs/footer.jpg" alt="header" style={{display:'flex',height:'100px',width:'100%',margin:'7px'}}/>
+
         </IonToolbar>
       </IonFooter>
       </IonContent>

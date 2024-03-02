@@ -1,0 +1,13 @@
+{
+  "dashboard": "डैशबोर्ड",
+"employeeNameAndID": "कर्मचारी का नाम और आईडी",
+"shiftTimingDetails": "शिफ्ट का समय विवरण",
+"punchIn": "पंच इन",
+"ticket": "टिकट",
+"leave": "अवकाश",
+"sos": "एसओएस",
+"copyright": "कॉपीराइट | गार्ड एप्लिकेशन",
+"routes": "रूटेस",
+"selectRoute": "रूट चुनें",
+"startTrip": "यात्रा शुरू करें"
+}
