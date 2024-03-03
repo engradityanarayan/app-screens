@@ -13,6 +13,7 @@ import {
 import { useLocation } from 'react-router-dom';
 import { archiveOutline, archiveSharp, bookmarkOutline, calendarClearOutline, cameraOutline, documentAttachOutline, fingerPrintOutline, folderOpenOutline, handLeftOutline, heartOutline, heartSharp, informationCircleOutline, logInOutline, mailOutline, mailSharp, mapOutline, newspaperOutline, paperPlaneOutline, paperPlaneSharp, thumbsUpOutline, trashOutline, trashSharp, warningOutline, warningSharp } from 'ionicons/icons';
 import './Menu.css';
+import { useTranslation } from 'react-i18next';
 
 interface AppPage {
   url: string;
@@ -22,18 +23,18 @@ interface AppPage {
 }
 
 const appPages: AppPage[] = [
-  {
-    title: 'Loader',
-    url: '/',
-    iosIcon: informationCircleOutline,
-    mdIcon: informationCircleOutline
-  },
-  {
-    title: 'Login',
-    url: '/pages/Login',
-    iosIcon: logInOutline,
-    mdIcon: logInOutline
-  },
+  // {
+  //   title: 'Loader',
+  //   url: '/',
+  //   iosIcon: informationCircleOutline,
+  //   mdIcon: informationCircleOutline
+  // },
+  // {
+  //   title: 'Login',
+  //   url: '/pages/Login',
+  //   iosIcon: logInOutline,
+  //   mdIcon: logInOutline
+  // },
   // {
   //   title: 'Register',
   //   url: '/pages/Register',
@@ -46,12 +47,12 @@ const appPages: AppPage[] = [
   //   iosIcon: handLeftOutline,
   //   mdIcon: handLeftOutline
   // },
-  // {
-  //   title: 'Dashboard',
-  //   url: '/pages/Dashboard',
-  //   iosIcon: calendarClearOutline,
-  //   mdIcon: calendarClearOutline
-  // },
+  {
+    title: 'Dashboard',
+    url: '/pages/Dashboard',
+    iosIcon: calendarClearOutline,
+    mdIcon: calendarClearOutline
+  },
   // {
   //   title: 'Face Recognition',
   //   url: '/pages/Face',
@@ -64,24 +65,24 @@ const appPages: AppPage[] = [
   //   iosIcon: fingerPrintOutline,
   //   mdIcon: fingerPrintOutline
   // },
-  // {
-  //   title: 'Profile',
-  //   url: '/pages/Accountupd',
-  //   iosIcon: folderOpenOutline,
-  //   mdIcon: folderOpenOutline
-  // },
+  {
+    title: 'Profile',
+    url: '/pages/Accountupd',
+    iosIcon: folderOpenOutline,
+    mdIcon: folderOpenOutline
+  },
   // {
   //   title: 'Attendance',
   //   url: '/pages/Attendance',
   //   iosIcon: thumbsUpOutline,
   //   mdIcon: thumbsUpOutline
   // },
-  // {
-  //   title: 'Notice',
-  //   url: '/pages/Notice',
-  //   iosIcon: documentAttachOutline,
-  //   mdIcon: documentAttachOutline
-  // },
+  {
+    title: 'Notice',
+    url: '/pages/Notice',
+    iosIcon: documentAttachOutline,
+    mdIcon: documentAttachOutline
+  },
   // {
   //   title: 'Routes',
   //   url: '/pages/Routes',

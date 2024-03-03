@@ -5,7 +5,7 @@ import i18n from './i18n.js';
 import { Redirect, Route } from 'react-router-dom';
 import Menu from './components/Menu';
 import Loader from './pages/Loader';
-
+import { useTranslation } from 'react-i18next';
 /* Core CSS required for Ionic components to work properly */
 import '@ionic/react/css/core.css';
 
@@ -37,9 +37,11 @@ import Routes from './pages/Routes';
 import Routeslive from './pages/Routeslive';
 import Routesend from './pages/Routesend';
 import Routesreport from './pages/Routesreport';
+// import Logout from './pages/Logout';
 setupIonicReact();
 
 const App: React.FC = () => {
+  const { t } = useTranslation();
   return (
     <I18nextProvider i18n={i18n}>
       <IonApp>
@@ -47,11 +49,14 @@ const App: React.FC = () => {
           <IonSplitPane contentId="main">
             <Menu />
             <IonRouterOutlet id="main">
-              <Route exact path="/" component={Loader}/>
-              <Route exact path="/pages/Login" component={Login}/>
+              {/* <Route exact path="/" component={Loader}/> */}
+              <Route exact path="/" component={Login}/>
               {/* <Route exact path="/pages/Register" component={Register}/> */}
               {/* <Route exact path="/pages/Recruitment" component={Recruitment}/> */}
               <Route exact path="/pages/Dashboard" component={Dashboard}/>
+              <Route exact path="/pages/Accountupd" component={Accountupd}/>
+              <Route exact path="/pages/Notice" component={Notice}/>
+              {/* <Route exact path="/pages/Logout" component={Logout}/> */}
               {/* <Route exact path="/pages/Account" component={Account}/>
               <Route exact path="/pages/Face" component={Face}/>
               <Route exact path="/pages/Accountupd" component={Accountupd}/>

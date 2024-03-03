@@ -30,7 +30,11 @@ ion-progress-bar::part(track) {
     align-items: center;
     height: 100vh; /* Set the height to 100% of the viewport height or adjust as needed */
   }
-  
+  .footer{
+    background-color: yellow !important;
+    color: black;
+    padding: 15px;
+  }  
   /* Add additional styling for your calendar if necessary */
   
   

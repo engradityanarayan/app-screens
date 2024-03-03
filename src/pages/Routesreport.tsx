@@ -59,14 +59,15 @@ const Routesreport: React.FC = () => {
           <IonCol size="4" size-md="4" size-lg="4"><IonButton color="danger" size="small">SOS</IonButton></IonCol>
         </IonRow>
       </IonGrid>
-      
-          
-          
-    <IonFooter>
-        <IonToolbar>
-          <IonTitle className='ion-text-center ion-margin'>Copyright | Guard App</IonTitle>
+      <div className='footer'>
+    <IonTitle className='footer ion-text-center'>Helpline | +91 90999 XXXXX</IonTitle>
+      </div>
+    {/* <IonFooter style={{"background-color": "yellow"}}>
+        <IonToolbar className="footer">
+          <IonTitle className='footer ion-text-center'>Helpline | +91 90999 XXXXX</IonTitle>
+          <IonImg class='header-image' src="./assets/imgs/footer.jpg" alt="header" style={{display:'flex',height:'100px',width:'100%',margin:'7px'}}/> 
         </IonToolbar>
-      </IonFooter>
+      </IonFooter> */}
       </IonContent>
     </IonPage>
   );

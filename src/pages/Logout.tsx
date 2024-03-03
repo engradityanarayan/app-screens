@@ -6,7 +6,7 @@ import { useHistory } from 'react-router-dom';
 
 // import ExploreContainer from '../components/ExploreContainer';
 import './Page.css';
-const Login: React.FC = () => {
+const Logout: React.FC = () => {
 
   const { name } = useParams<{ name: string; }>();
 
@@ -50,7 +50,7 @@ const Login: React.FC = () => {
       
       }
     }else{
-      alert('Wrong User Name or Password');
+      alert('xxx');
     }
     } catch (error) {
       console.error('Error:', error);
@@ -134,4 +134,4 @@ const Login: React.FC = () => {
   );
 };
 
-export default Login;
+export default Logout;
