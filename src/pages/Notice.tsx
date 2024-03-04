@@ -13,7 +13,7 @@ const Notice: React.FC = () => {
           <IonButtons slot="start">
             <IonMenuButton />
           </IonButtons>
-          <IonImg class='header-image' src="./assets/imgs/header.png" alt="header" style={{display:'flex',height:'100px',width:'100%',margin:'7px'}}/>
+          <IonImg class='header-image' src="./assets/imgs/logo.jpg" alt="header" style={{display:'flex',height:'100px',width:'100%',margin:'7px'}}/>
           <IonTitle>{name}</IonTitle>          
         </IonToolbar>
         
@@ -24,7 +24,7 @@ const Notice: React.FC = () => {
         <IonTitle>{name}</IonTitle>
         </IonHeader>        
         <IonCard className='ion-text-center ion-margin'>
-      <img alt="Logo" src="./assets/imgs/logo.jpg"/>
+      {/* <img alt="Logo" src="./assets/imgs/logo.jpg"/> */}
       <IonCardHeader>
         <IonCardTitle color={'dark'} >Notice</IonCardTitle>
         <IonCardSubtitle color={'dark'}>Notice Published for Guards and Duty</IonCardSubtitle>
@@ -50,11 +50,15 @@ const Notice: React.FC = () => {
     </IonList>
       </IonCardContent>
     </IonCard>
-    <IonFooter>
-        <IonToolbar>
-          <IonTitle className='ion-text-center ion-margin'>Copyright | Guard App</IonTitle>
+    <div className='footer'>
+    <IonTitle className='footer ion-text-center'>Helpline | +91 90999 XXXXX</IonTitle>
+      </div>
+    {/* <IonFooter style={{"background-color": "yellow"}}>
+        <IonToolbar className="footer">
+          <IonTitle className='footer ion-text-center'>Helpline | +91 90999 XXXXX</IonTitle>
+          <IonImg class='header-image' src="./assets/imgs/footer.jpg" alt="header" style={{display:'flex',height:'100px',width:'100%',margin:'7px'}}/> 
         </IonToolbar>
-      </IonFooter>
+      </IonFooter> */}
       </IonContent>
     </IonPage>
   );

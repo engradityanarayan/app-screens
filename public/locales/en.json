@@ -2,7 +2,7 @@
         "dashboard": "Dashboard",
         "employeeNameAndID": "Employee Name and ID",
         "shiftTimingDetails": "Shift Timing Details",
-        "punchIn": "Punch In",
+        "punchIn": "Duty Start",
         "ticket": "Ticket",
         "leave": "Leave",
         "sos": "SOS",

@@ -3,7 +3,7 @@ import { useParams } from 'react-router';
 import { useTranslation } from 'react-i18next';
 // import ExploreContainer from '../components/ExploreContainer';
 import './Page.css';
-const Register: React.FC = () => {
+const Dashboard: React.FC = () => {
 
   const { name } = useParams<{ name: string; }>();
   const { t } = useTranslation();
@@ -15,7 +15,7 @@ const Register: React.FC = () => {
           <IonButtons slot="start">
             <IonMenuButton />
           </IonButtons>
-          <IonImg class='header-image' src="./assets/imgs/header.png" alt="header" style={{display:'flex',height:'100px',width:'100%',margin:'7px'}}/>
+          <IonImg class='header-image' src="./assets/imgs/logo.jpg" alt="header" style={{display:'flex',height:'100px',width:'100%'}}/>
           <IonTitle>{name}</IonTitle>          
         </IonToolbar>
         
@@ -77,24 +77,23 @@ const Register: React.FC = () => {
           {/* <IonCol size="4" size-md="4" size-lg="4"><IonTitle><IonButton color="secondary" size="small">Ticket</IonButton></IonTitle></IonCol>
           <IonCol size="4" size-md="4" size-lg="4"><IonButton color="warning" size="small">Leave</IonButton></IonCol>
           <IonCol size="4" size-md="4" size-lg="4"><IonButton color="danger" size="small">SOS</IonButton></IonCol> */}
-          <IonCol size="4" size-md="4" size-lg="4"><IonTitle><IonButton color="secondary" size="small">{t('ticket')}</IonButton></IonTitle></IonCol>
-          <IonCol size="4" size-md="4" size-lg="4"><IonButton color="warning" size="small">{t('leave')}</IonButton></IonCol>
-          <IonCol size="4" size-md="4" size-lg="4"><IonButton color="danger" size="small">{t('sos')}</IonButton></IonCol>
+          <IonCol size="4" size-md="4" size-lg="4"><IonTitle><IonButton color="secondary">{t('ticket')}</IonButton></IonTitle></IonCol>
+          <IonCol size="4" size-md="4" size-lg="4"><IonButton color="warning">{t('leave')}</IonButton></IonCol>
+          <IonCol size="4" size-md="4" size-lg="4"><IonButton color="danger">{t('sos')}</IonButton></IonCol>
         </IonRow>
       </IonGrid>
-      
-          
-          
-    <IonFooter>
-        <IonToolbar>
-          {/* <IonTitle className='ion-text-center ion-margin'>Copyright | Guard App</IonTitle> */}
-          <IonImg class='header-image' src="./assets/imgs/footer.jpg" alt="header" style={{display:'flex',height:'100px',width:'100%',margin:'7px'}}/>
-
+      <div className='footer'>
+    <IonTitle className='footer ion-text-center'>Helpline | +91 90999 XXXXX</IonTitle>
+      </div>
+    {/* <IonFooter style={{"background-color": "yellow"}}>
+        <IonToolbar className="footer">
+          <IonTitle className='footer ion-text-center'>Helpline | +91 90999 XXXXX</IonTitle>
+          <IonImg class='header-image' src="./assets/imgs/footer.jpg" alt="header" style={{display:'flex',height:'100px',width:'100%',margin:'7px'}}/> 
         </IonToolbar>
-      </IonFooter>
+      </IonFooter> */}
       </IonContent>
     </IonPage>
   );
 };
 
-export default Register;
+export default Dashboard;
