@@ -1,11 +1,12 @@
 import { useState, useEffect } from 'react';
-import { IonButtons, IonContent, IonHeader, IonMenuButton, IonPage, IonTitle, IonToolbar, IonImg, isPlatform,IonFab,
+import { IonGrid,IonRow,IonCol, IonButtons, IonContent, IonHeader, IonMenuButton, IonPage, IonTitle, IonToolbar, IonImg, isPlatform,IonFab,
   IonFabButton,
   IonActionSheet, IonIcon, IonFooter} from '@ionic/react';import { useParams } from 'react-router';
 import { usePhotoGallery } from '../../src/hooks/usePhotoGallery';
 import './Page.css';
 const Face: React.FC = () => {
-  const { takePhoto } = usePhotoGallery();
+  const { photos, takePhoto } = usePhotoGallery();
+  
   const { name } = useParams<{ name: string; }>();
 
   return (
@@ -22,11 +23,19 @@ const Face: React.FC = () => {
       </IonHeader>
 
       <IonContent fullscreen>
-      <IonFab vertical="bottom" horizontal="center" slot="fixed">
-    <IonFabButton onClick={() => takePhoto()}>
-      {/* <IonIcon icon={logoIonic}></IonIcon> */}
-    </IonFabButton>
-  </IonFab>    
+        {/* <IonGrid>
+          <IonRow>
+            <IonCol size="6" key={photos.filepath}>
+                <IonImg src={photos.webviewPath} />
+              </IonCol>
+          </IonRow>
+        </IonGrid> */}
+        
+        <IonFab vertical="bottom" horizontal="center" slot="fixed">
+          <IonFabButton onClick={() => takePhoto()}>
+            {/* <IonIcon icon={logoIonic}></IonIcon> */}
+          </IonFabButton>
+        </IonFab>    
       </IonContent>
     </IonPage>
   );

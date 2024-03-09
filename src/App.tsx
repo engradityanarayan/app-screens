@@ -25,6 +25,7 @@ import '@ionic/react/css/display.css';
 /* Theme variables */
 import './theme/variables.css';
 import Login from './pages/Login';
+import LanguageSelector from './pages/LanguageSelector';
 import Recruitment from './pages/Recruitment';
 import Register from './pages/Register';
 import Dashboard from './pages/Dashboard';
@@ -37,6 +38,9 @@ import Routes from './pages/Routes';
 import Routeslive from './pages/Routeslive';
 import Routesend from './pages/Routesend';
 import Routesreport from './pages/Routesreport';
+import DocumentUpload from './pages/DocumentUpload';
+import Logout from './pages/Logout';
+
 // import Logout from './pages/Logout';
 setupIonicReact();
 
@@ -50,22 +54,25 @@ const App: React.FC = () => {
             <Menu />
             <IonRouterOutlet id="main">
               {/* <Route exact path="/" component={Loader}/> */}
-              <Route exact path="/" component={Login}/>
+              <Route exact path="/" component={LanguageSelector}/>
+              <Route exact path="/pages/Login" component={Login}/>
               {/* <Route exact path="/pages/Register" component={Register}/> */}
               {/* <Route exact path="/pages/Recruitment" component={Recruitment}/> */}
               <Route exact path="/pages/Dashboard" component={Dashboard}/>
               <Route exact path="/pages/Accountupd" component={Accountupd}/>
               <Route exact path="/pages/Notice" component={Notice}/>
               {/* <Route exact path="/pages/Logout" component={Logout}/> */}
-              {/* <Route exact path="/pages/Account" component={Account}/>
+              {/* <Route exact path="/pages/Account" component={Account}/> */}
               <Route exact path="/pages/Face" component={Face}/>
-              <Route exact path="/pages/Accountupd" component={Accountupd}/>
+              {/*<Route exact path="/pages/Accountupd" component={Accountupd}/> */}
               <Route exact path="/pages/Attendance" component={Attendance}/>
-              <Route exact path="/pages/Notice" component={Notice}/>
+             {/* <Route exact path="/pages/Notice" component={Notice}/>
               <Route exact path="/pages/Routes" component={Routes}/>
               <Route exact path="/pages/Routeslive" component={Routeslive}/>
               <Route exact path="/pages/Routesend" component={Routesend}/>
               <Route exact path="/pages/Routesreport" component={Routesreport}/>             */}
+              <Route exact path="/pages/DocumentUpload" component={DocumentUpload}/>
+              <Route exact path="/pages/Logout" component={Logout}/>
             </IonRouterOutlet>
           </IonSplitPane>
         </IonReactRouter>

@@ -21,7 +21,6 @@ interface AppPage {
   mdIcon: string;
   title: string;
 }
-
 const appPages: AppPage[] = [
   // {
   //   title: 'Loader',
@@ -106,7 +105,13 @@ const appPages: AppPage[] = [
   //   url: '/pages/Routesend',
   //   iosIcon: mapOutline,
   //   mdIcon: mapOutline
-  // }
+  // },
+  {
+    title: 'Logout',
+    url: '/pages/Logout',
+    iosIcon: logInOutline,
+    mdIcon: logInOutline
+  }
 ];
 
 // const labels = ['Family', 'Friends', 'Notes', 'Work', 'Travel', 'Reminders'];
@@ -114,13 +119,48 @@ const appPages: AppPage[] = [
 const Menu: React.FC = () => {
   const location = useLocation();
 
+  const { t } = useTranslation();
+
+  const menuItems = [
+    {
+      title:  t('Dashboard'),
+      url: '/pages/Dashboard',
+      iosIcon: calendarClearOutline,
+      mdIcon: calendarClearOutline
+    },
+    {
+      title: t('Profile'),
+      url: '/pages/Accountupd',
+      iosIcon: folderOpenOutline,
+      mdIcon: folderOpenOutline
+    },
+    {
+      title: t('Notice'),
+      url: '/pages/Notice',
+      iosIcon: documentAttachOutline,
+      mdIcon: documentAttachOutline
+    },
+    {
+      title: t('Document Upload'),
+      url: '/pages/DocumentUpload',
+      iosIcon: folderOpenOutline,
+      mdIcon: folderOpenOutline
+    },
+    {
+      title: t('Logout'),
+      url: '/pages/Logout',
+      iosIcon: logInOutline,
+      mdIcon: logInOutline
+    }
+  ];
+
   return (
     <IonMenu contentId="main" type="overlay">
       <IonContent>
         <IonList id="inbox-list">
           <IonListHeader>Guard App</IonListHeader>
           <IonNote>Hi User</IonNote>
-          {appPages.map((appPage, index) => {
+          {menuItems.map((appPage, index) => {
             return (
               <IonMenuToggle key={index} autoHide={false}>
                 <IonItem className={location.pathname === appPage.url ? 'selected' : ''} routerLink={appPage.url} routerDirection="none" lines="none" detail={false}>
